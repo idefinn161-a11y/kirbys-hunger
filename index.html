@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kirby's Hunger Time</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Varela+Round&display=swap');
+      
+      body {
+        font-family: 'Varela Round', sans-serif;
+        background-color: #fce7f3; /* pink-100 */
+        overflow: hidden; /* Prevent scrolling on mobile during game */
+        touch-action: none;
+      }
+      h1, h2, h3, .font-display {
+        font-family: 'Fredoka One', cursive;
+      }
+
+      .bg-mega-pink {
+        background-color: #db2777; /* pink-600 for extreme pinkness */
+        background-image: linear-gradient(
+          -45deg, 
+          rgba(255, 255, 255, 0.15) 25%, 
+          transparent 25%, 
+          transparent 50%, 
+          rgba(255, 255, 255, 0.15) 50%, 
+          rgba(255, 255, 255, 0.15) 75%, 
+          transparent 75%, 
+          transparent
+        );
+        background-size: 80px 80px;
+        animation: move-stripes 2s linear infinite;
+      }
+
+      @keyframes move-stripes {
+        0% { background-position: 0 0; }
+        100% { background-position: 80px 80px; }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
